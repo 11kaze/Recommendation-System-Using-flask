@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/styles/login.css">
+    <title>Login Page</title>
+
+</head>
+<body>
+<div align="center" id='container'>
+  <form action="/form_login" method="post">
+    <h2>Login Page</h2>Username:<br>
+    <input type="text" name='username' placeholder="Username..." required><br>
+    Password:<br>
+    <input  type = 'password' name='password' placeholder="password..." required><br><br>
+  <input type="submit" value="Login">
+  </form>
+  <h1 >{{info}}</h1>
+</div>
+<footer>
+  <p>Copyright © Pawan Singh</p>
+</footer>
+</body>
+</html>

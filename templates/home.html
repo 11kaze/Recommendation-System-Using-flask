@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/styles/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+    <h1><er style="font-size: 55px;">M</er>ovie<er style="color: rgb(255, 117, 133); font-size: 32px;">Recommendations</er></h1>
+    <a href=logout ><button class="logout">logout</button></a> 
+</div>
+<br>
+<h1 align="center" style="color: rgb(85, 202, 248);">Welcome <er style="color: white">{{name}}</er></h1>
+<h2 align='center' style="color: white; font-weight: bolder;">Your personalized <er style="color: rgb(85, 202, 248);">Recommendations</er></h2>
+
+<div style="width: 100%;height: 220px;background-color: rgb(221, 221, 221, 0.05);" class='print_data'>
+    <div style="width: 100%;height: auto; padding-top: 25px;padding-bottom: 25px;" align='center' class='code'>
+        {% block content %}
+        {{ data.to_html(classes="table table-striped") | safe}}
+        {% endblock %}
+    </div>      
+</div>
+<section id='AboutUS'>
+    <div class="about"><h1 style="color: rgb(253, 127, 127);">AboutUS</h1></div>
+    <div class='info'>
+        <p align='left' style="width: 500px;font-size: 19px;">Hello Everyone, I am Pawan. An student of SRM University Sonepat.
+        I have made this project in the supervision of my mentor Mr. Puneet Goswami Sir
+        .This project shows how movie recommendation system works for registered Users.
+        Still this project is in it's development phase. So please have patience.  
+        </p>
+        <br>Contact Us<br>
+        <a href="https://www.facebook.com/profile.php?id=100007659785268" style="font-size:24px;color: beige;"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/11_kaze/?hl=en" style="font-size:24px;color: rgb(238, 88, 213);"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pawan-singh-764a311bb/" style="font-size:24px;color: beige"><i class="fa fa-linkedin-square"></i></a>
+    </div>
+    <div class="image">
+        <img style="width: 300px;height: 300px;padding-left: 40px;" src="/static/styles/MR.gif" alt="angry">
+    </div>
+</section>
+<footer>
+    <p>Copyright © Pawan Singh, from SRM University</p>
+</footer>
+</body>
+</html>

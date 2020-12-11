@@ -97,5 +97,4 @@ def logout():
     return render_template('login.html')
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run(port=7000)
+    app.run(debug = True)
